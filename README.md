@@ -47,3 +47,26 @@
 ```
 _基本上只需在`./chapters`資料夾中的檔案進行撰寫及可_
 
+## 文獻回顧APA格式
+
+* 若在Google scholar 所搜尋的文章，點選文章下方的引用：
+
+![引用](https://raw.githubusercontent.com/uray-lu/NCCU-Thesis-Overleaf-Frame/master/imgs./bib1.png)
+
+* 點選引用之後選擇Bib Tex即可獲取APA格式:
+
+![Bib Tex](https://raw.githubusercontent.com/uray-lu/NCCU-Thesis-Overleaf-Frame/master/imgs./bib2.png)
+
+* 複製參考文獻的APA格式至`thesis.bib`中，及可在撰寫正文時使用``` \cite{ }```來引注文章:
+
+![APA](https://raw.githubusercontent.com/uray-lu/NCCU-Thesis-Overleaf-Frame/master/imgs./bib3.png)
+
+
+
+
+
+
+
+
+
+
