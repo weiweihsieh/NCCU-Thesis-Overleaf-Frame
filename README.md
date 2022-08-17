@@ -9,7 +9,7 @@
 此模板是由[nccu-thesis](https://github.com/Walker088/nccu-thesis) 所提供的英文論文格式fork而來，其中也參考了[shaform](https://github.com/shaform/ntu-thesis)
 所寫的[wiki](https://github.com/shaform/ntu-thesis/wiki) 說明，最後由[uray-lu](https://github.com/uray-lu)
 依照[國立政治大學博碩士論文全文影像系統](https://thesis.lib.nccu.edu.tw/cgi-bin/gs32/gsweb.cgi/login?o=dwebmge) 所要求之中文論文格式規範進行更動，
-本框架已依照國立政治大學博碩士論文全文影像系統所要求的中文論文格式進行編排， 可以直接在[Overlea](https://www.overleaf.com/login) 上進行編譯和撰寫，輸出的PDF格式交出去學校就ＯＫ!
+本框架已依照國立政治大學博碩士論文全文影像系統所要求的中文論文格式進行編排， 可以直接在[Overleaf](https://www.overleaf.com/login) 上進行編譯和撰寫，輸出的PDF格式交出去學校就ＯＫ!
 
 
 ## 下載
@@ -23,9 +23,9 @@
 ![上傳zip檔製作新專案](https://raw.githubusercontent.com/uray-lu/NCCU-Thesis-Overleaf-Frame/master/imgs./upload_zip.png)  
 
 
-```
+
 * 進入此專案後須進入左上角的`menu`，將Compiler更改為 XeLatex 即可順利編譯文件。
-```
+
 ![Menu](https://raw.githubusercontent.com/uray-lu/NCCU-Thesis-Overleaf-Frame/master/imgs./setting.png)
 
 * 檔案中僅提供範例公式若有需要其他公式請自行搜尋Latex語法。
@@ -53,10 +53,10 @@ _於Overleaf開啟檔案後每個檔案中綠色的字為詳細說明。_
 
 ```
 * Note  
-    * 除了在`./chapters`資料夾中的檔案中自行編輯及撰寫，其餘設定檔皆以設定好次序和排序，並有說明附於設定檔之中，基本上不用再進行更改。  
+* 除了在`./chapters`資料夾中的檔案中自行編輯及撰寫，其餘設定檔皆以設定好次序和排序，並有說明附於設定檔之中，基本上不用再進行更改。  
          `./chapters`資料夾中的各個檔案中皆分別示範不同的範例展示撰寫時所需的功能。  
-    * 目次、圖目錄、表目錄皆會自行編輯和排版，無需另外設定，也無需再設定頁碼和內文間距及排版。     
-    * 浮水印可至`thesis.tex`中的46行來設定是否加入，此模板預設為加入，若想移除只需在第46行前加上'%'
+* 目次、圖目錄、表目錄皆會自行編輯和排版，無需另外設定，也無需再設定頁碼和內文間距及排版。     
+* 浮水印可至`thesis.tex`中的46行來設定是否加入，此模板預設為加入，若想移除只需在第46行前加上'%'
 ```
 _基本上只需在`./chapters`資料夾中的檔案進行撰寫即可_
 
