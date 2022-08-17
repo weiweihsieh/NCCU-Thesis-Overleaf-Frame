@@ -18,7 +18,7 @@
 
 ## 開始撰寫
 
-* 將repo下載成.zip檔後可直接上傳至[Overlea](https://www.overleaf.com/login) 主頁。
+* 將此repo下載成.zip檔後可直接上傳至[Overlea](https://www.overleaf.com/login) 主頁。
 
 ![上傳zip檔製作新專案](https://raw.githubusercontent.com/uray-lu/NCCU-Thesis-Overleaf-Frame/master/imgs./upload_zip.png)  
 
