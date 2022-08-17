@@ -10,3 +10,40 @@
 本框架已依照國立政治大學博碩士論文全文影像系統所要求的中文論文格式進行編排， 可以直接在[Overlea](https://www.overleaf.com/login) 上進行編譯和撰寫，輸出的PDF格式交出去學校就ＯＫ!
 
 
+## 下載
+
+可以直接將此專案`clone`到本地端，也可以直接下載.zip檔。
+
+## 開始撰寫
+
+* 將repo下載成.zip檔後可直接上傳至[Overlea](https://www.overleaf.com/login) 主頁。
+
+![上傳zip檔製作新專案](https://raw.githubusercontent.com/uray-lu/NCCU-Thesis-Overleaf-Frame/master/imgs./upload_zip.png)  
+
+
+```
+* 進入此專案後須進入左上角的`menu`，將Compiler更改為 XeLatex 即可順利編譯文件。
+```
+![Menu](https://raw.githubusercontent.com/uray-lu/NCCU-Thesis-Overleaf-Frame/master/imgs./setting.png)
+
+## 檔案內容
+
+* 主要章節位於`./chapters`資料夾中，可以自行重新命名及編輯，本模板的各個章節皆有不同的示範。
+* 整份論文之章節次序以及加入浮水印皆位於 `thesis.tex中`可自行更改調換，檔案中的順序已不用再進行更改。 
+* 封面資訊可至`nccuvars.tex`中進行更改與輸入，檔案中亦有詳細說明。
+* 論文內的圖片首先需於overleaf上傳至`images`資料夾，需再至`figures`資料夾內創件該圖片的.tex檔，即可在內文中插入圖片，在`./chapters`資料夾中的檔案中會有示範如何插入圖片。
+* 論文內的表格都於`tables`資料夾中由Latex語法製作，`tables`資料夾中有些須範例格式， 在`./chapters`資料夾中的檔案中會有示範如何插入表格。
+* 中英文摘要皆可於`abstract.tex`中進行撰寫。
+* 謝詞可於`acknowledgements.tex`中進行撰寫。  
+* 參考文獻於`thesis.bib`中，本模板採用APA格式進行引用，在`./chapters`資料夾中的檔案中會有示範如何引用參考文獻。
+* 若要在封面中加入英文資訊可參考`nccuthesis.cls`中第68行的說明部分，其他格式設定上的說明亦可參考此檔案。
+
+```
+* Note  
+    * 除了在`./chapters`資料夾中的檔案中自行編輯及撰寫，其餘設定檔皆以設定好次序和排序，並有說明附於設定檔之中，基本上不用再進行更改。  
+         `./chapters`資料夾中的各個檔案中皆分別示範不同的範例展示撰寫時所需的功能。  
+    * 目次、圖目錄、表目錄皆會自行編輯和排版，無需另外設定，也無需再設定頁碼和內文間距及排版。     
+    * 浮水印可至`thesis.tex`中的46行來設定是否加入，此模板預設為加入，若想移除只需在第46行前加上'%'
+```
+_基本上只需在`./chapters`資料夾中的檔案進行撰寫及可_
+
