@@ -62,7 +62,11 @@ _基本上只需在`./chapters`資料夾中的檔案進行撰寫及可_
 ![APA](https://raw.githubusercontent.com/uray-lu/NCCU-Thesis-Overleaf-Frame/master/imgs./bib3.png)
 
 
+## 口試之後
 
+* 待所有文件簽訂完畢，將論文PDF檔案（不需浮水印）上傳至[國立政治大學博碩士論文全文影像系統](https://thesis.lib.nccu.edu.tw/cgi-bin/gs32/gsweb.cgi/login?o=dwebmge) 。
+* 待圖書館審核完畢即可獲得上完浮水印及DOI碼的完整論文檔案，附上口試通過同意書並印出之後將論文繳交至圖書館及系辦。
+* 至[離校審核系統](http://nccumisdoc.nccu.edu.tw/document_SSO/stuleavesch/stuleavesch.htm) 即可開始進行離校流程。
 
 
 
