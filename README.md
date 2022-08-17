@@ -5,7 +5,7 @@
 ## 前言
 
 此模板是由[nccu-thesis](https://github.com/Walker088/nccu-thesis) fork而來，其中也參考了[shaform](https://github.com/shaform/ntu-thesis)
-所寫的wiki說明，最後由[uray-lu](https://github.com/uray-lu)
+所寫的[wiki](https://github.com/shaform/ntu-thesis/wiki) 說明，最後由[uray-lu](https://github.com/uray-lu)
 依照[國立政治大學博碩士論文全文影像系統](https://thesis.lib.nccu.edu.tw/cgi-bin/gs32/gsweb.cgi/login?o=dwebmge) 所要求之中文論文格式規範所更改，
 本框架已依照國立政治大學博碩士論文全文影像系統所要求的中文論文格式進行編排， 可以直接在[Overlea](https://www.overleaf.com/login) 上進行編譯和撰寫，輸出的PDF格式交出去學校就ＯＫ!
 
