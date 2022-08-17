@@ -79,7 +79,7 @@ _基本上只需在`./chapters`資料夾中的檔案進行撰寫即可_
 
 * 待所有文件簽訂完畢，將論文PDF檔案（不需浮水印）上傳至[國立政治大學博碩士論文全文影像系統](https://thesis.lib.nccu.edu.tw/cgi-bin/gs32/gsweb.cgi/login?o=dwebmge) 。
 * 待圖書館審核完畢即可獲得上完浮水印及DOI碼的完整論文檔案，附上口試通過同意書於論文前頁並印出之後將論文繳交至圖書館及系辦（反正所有文件都拿去飛捷，姊姊會告訴你怎麼擺順序）。
-* 除了系辦寄的口試文件之外請再自己去印這張[電子論文學術品質同意書](https://chinese.nccu.edu.tw/upload/35/download_file/6077/%E7%A2%A9%E5%8D%9A%E5%A3%AB%E5%AD%B8%E7%94%9F%E9%9B%BB%E5%AD%90%E8%AB%96%E6%96%87%E5%AD%B8%E8%A1%93%E5%93%81%E8%B3%AA%E5%90%8C%E6%84%8F%E6%9B%B8.pdf)，指導老師簽完名跟離校單一起交給教務處就可以離校了。
+* 除了系辦寄的口試文件之外請再自己去印這張[電子論文學術品質同意書](https://chinese.nccu.edu.tw/upload/35/download_file/6077/%E7%A2%A9%E5%8D%9A%E5%A3%AB%E5%AD%B8%E7%94%9F%E9%9B%BB%E5%AD%90%E8%AB%96%E6%96%87%E5%AD%B8%E8%A1%93%E5%93%81%E8%B3%AA%E5%90%8C%E6%84%8F%E6%9B%B8.pdf)，指導老師簽完名跟離校單一起交給學務處就可以離校了。
 * 至[離校審核系統](http://nccumisdoc.nccu.edu.tw/document_SSO/stuleavesch/stuleavesch.htm) 即可開始進行離校流程。
 
 
