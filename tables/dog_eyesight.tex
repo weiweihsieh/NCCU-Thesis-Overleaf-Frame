@@ -1,0 +1,37 @@
+%%%之後若需製作新表格僅需依照本檔案格式來創建即可，在本文中插入表格的方式可參考chapters中研究方法檔案的範例。
+%------------------------------------------------------------
+
+\begin{table}[htbp]
+
+%%更改下一行{}中的文字即可更改表格名稱
+\caption{狗狗視力檢定}
+\begin{center}% used the environment to augment the vertical space
+% between the caption and the table
+
+%務必在下方{}中加上表格章節編號
+\label{3-1}
+\begin{adjustbox}{max width=1\textwidth}
+
+%以下為範例表格，若需要其他種格式的表格可以自行搜尋Latex語法製作表格的方式將以下16行到32行代換掉即可。
+\begin{tabular}{l c c c c c c  p{0cm} }
+\toprule
+
+
+
+& \multicolumn{2}{c}{A}& \multicolumn{2}{c}{b} & \multicolumn{2}{c}{d} \\ 
+\cmidrule(lr){2-7}
+& Statistic &  P-value & Statistic &  P-value & Statistic &  P-value  \\
+\midrule
+Realized Volatility &-11.98*** &0.00 &0.00208 &0.253 &-36.836*** &0.00 \\
+Bitcoin Return &-18.13*** &0.00 &0.365 &0.089 &-40.512*** &0.00 \\
+        
+\bottomrule
+
+\end{tabular}
+\end{adjustbox}
+\end{center}
+
+
+
+\end{table}
+

@@ -1,0 +1,115 @@
+\documentclass[zh]{nccuthesis}
+
+\usepackage{times}
+\usepackage{verbatim}
+\usepackage{color}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{pdfpages} % include outside .pdf
+\usepackage{wallpaper} % watermark
+% for table generate
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{subfigure}
+
+% Format the refs
+\usepackage[sort,comma]{natbib}
+\usepackage[hidelinks]{hyperref}
+
+% For the tree
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+
+% For barchart
+\usepackage{pgfplots}
+
+% Using the tex-text mapping for ligatures etc.
+\defaultfontfeatures{Mapping=tex-text}
+
+% Set the default fonts
+\setmainfont{Times New Roman}
+\setCJKmainfont{TW-Kai}
+
+% Your information goes here
+\input{nccuvars}
+\pgfplotsset{compat=1.14}
+\begin{document}
+
+% 政大論文浮水印
+\input{src/with-watermark.tex}
+
+\hypersetup{pageanchor=false}
+
+
+\frontmatter
+\pagenumbering{gobble}
+\makecover
+
+\clearpages
+\setcounter{page}{1}
+\hypersetup{pageanchor=true}
+\pagenumbering{roman}
+\phantomsection
+
+% generate certification
+% \makecertification
+% or include scanned pdf
+
+
+\input{acknowledgements}
+\input{abstract}
+
+
+
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{
+
+\setlength{\topmargin}{#1}
+\setlength{\footskip}{#2}
+}%
+\item[]}{\end{list}}
+% Table of Content
+\clearpages
+\begin{changemargin}{-2cm}{2.5cm}
+\begin{small}
+\tableofcontents
+\end{small}
+\end{changemargin}
+% List of Figures
+
+\clearpages
+\listoffigures
+% List of Tables
+\clearpages
+\listoftables
+
+\mainmatter
+
+% Your thesis goes here
+\input{chapters/1.緒論}
+\input{chapters/2.文獻回顧}
+\input{chapters/3.研究方法}
+\input{chapters/4.實證結果}
+\input{chapters/5.結論與建議}
+
+
+\@startappendix
+
+
+\backmatter
+
+\clearpages
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliographystyle{apalike}
+% Your bibliography goes here
+\bibliography{thesis}
+
+\end{document}
