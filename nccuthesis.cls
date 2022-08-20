@@ -197,35 +197,10 @@
 
   % set two-character indentation
   \setlength{\parindent}{2em}
-
-  % Very Naive Chinese Number
-  \DeclareRobustCommand{\naiveZhNum}[1]{
-  \ifnum #1 = 1
-  一
-  \else \ifnum #1 = 2
-  二
-  \else \ifnum #1 = 3
-  三
-  \else \ifnum #1 = 4
-  四
-  \else \ifnum #1 = 5
-  五
-  \else \ifnum #1 = 6
-  六
-  \else \ifnum #1 = 7
-  七
-  \else \ifnum #1 = 8
-  八
-  \else \ifnum #1 = 9
-  九
-  \else
-  #1
-  \fi\fi\fi\fi\fi\fi\fi\fi\fi
-  }
   
   
-  \titleformat{\chapter}{\centering\Huge\bfseries}{第\naiveZhNum{\thechapter}章}{1em}{}
-  \titlecontents{chapter}[0em]{}{\makebox[4.1em][l]{第\naiveZhNum{\thecontentslabel}章}}{}{\cftdotfill{\cftdotsep}\contentspage}
+  \titleformat{\chapter}{\centering\Huge\bfseries}{第\CJKnumber{\thechapter}章}{1em}{}
+  \titlecontents{chapter}[0em]{}{\makebox[4.1em][l]{第\CJKnumber{\thecontentslabel}章}}{}{\cftdotfill{\cftdotsep}\contentspage}
   
   \renewcommand{\thesection}{\arabic{section}}
 
