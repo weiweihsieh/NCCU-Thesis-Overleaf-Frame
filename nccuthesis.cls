@@ -76,12 +76,20 @@
     \begin{center}
       \fontsize{18}{27}\selectfont
       \@universityzh\@collegezh\@institutezh\par
+     
+     {\fontsize{16}{24}\selectfont
+        \@instituteen\par
+        \@collegeen\par
+        \@universityen\par}
+
+      \vspace{\fill}
         \@typezh{}\@classzh\par
-      
+       \@typeen{} \@classen\par
+
       \vspace{\fill}
       {\fontsize{20}{24}
       \@titlezh\par}
-      
+      \vspace{0.5cm}
       {\Large\@titleen\par}
       \vspace{\fill}
       指導教授：\@advisorzh\\ 
@@ -91,7 +99,7 @@
         %\@authoren\par
       \vspace{1.5cm} 
       中華民國 \@yearzh 年 \@monthzh 月\\
-      %\@monthen, \@yearen
+      \@monthen \@yearen
     \end{center}
     \end{singlespace}
     \vspace{1cm}
@@ -133,6 +141,7 @@
 \titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter}{1em}{}
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % dots for chapters
 \titlecontents{chapter}[0em]{}{\makebox[1.5em][l]{\thecontentslabel}}{}{\cftdotfill{\cftdotsep}\contentspage}
+
 \titleformat{\section}[hang]{\Huge\bfseries}{\thesection}{1em}{}
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % dots for chapters
 \titlecontents{section}[0em]{}{\makebox[1.5em][l]{\thecontentslabel}}{}{\cftdotfill{\cftdotsep}\contentspage}       
@@ -184,17 +193,17 @@
 \newcommand\zhbf[1]{\CJKfakebold{#1}}
 
 \def\Huge{\fontsize{18}{20}\selectfont}
-\def\Large{\fontsize{16}{20}\selectfont}
+\def\Large{\fontsize{16}{16}\selectfont}
 \def\large{\fontsize{14}\selectfont}
-
-
-
 
 
 
 % set Chinese version
 \ifzh
 
+   %  add by WEI in 0514 for setting Chinese bold font
+  \xeCJKsetup{AutoFakeBold=true, AutoFakeSlant=true}
+  
   % set two-character indentation
   \setlength{\parindent}{2em}
   
@@ -202,12 +211,16 @@
   \titleformat{\chapter}{\centering\Huge\bfseries}{第\CJKnumber{\thechapter}章}{1em}{}
   \titlecontents{chapter}[0em]{}{\makebox[4.1em][l]{第\CJKnumber{\thecontentslabel}章}}{}{\cftdotfill{\cftdotsep}\contentspage}
   
-  \renewcommand{\thesection}{\arabic{section}}
+  %\renewcommand{\thesection}{\arabic{section}}
 
+  %  here change by WEI in 2023 0508 for my thesis format
+  % Use Chinese title and English subtitle at the same time
   
-  \titleformat{\section}{\centering\Large\bfseries}{第\CJKnumber{\thesection}節}{1em}{}
-  
-  \titlecontents{section}[2em]{}{\makebox[5.1em][l]{第\CJKnumber{\thecontentslabel}節}}{}{\cftdotfill{\cftdotsep}\contentspage}
+  \titleformat{\section}{\Large\bfseries}{{\thesection}}{1em}{}
+  \titlecontents{section}[2em]{}{\makebox[3.1em][l]{{\thecontentslabel}}}{}{\cftdotfill{\cftdotsep}\contentspage}
+
+%  \titleformat{\subsection}{\Large\bfseries}{{\thesection}}{1em}{}
+  %\titlecontents{section}[2em]{}{\makebox[3.1em][l]{{\thecontentslabel}}}{}{\cftdotfill{\cftdotsep}\contentspage}
  
 
 %若需更改內文目錄圖表名稱，更改下方{}中的文字即可
