@@ -1,0 +1,129 @@
+\documentclass[zh]{nccuthesis}
+
+\usepackage{times}
+\usepackage{verbatim}
+\usepackage{color}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{pdfpages} % include outside .pdf
+\usepackage{wallpaper} % watermark
+% for table generate
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+
+\usepackage{multirow}
+\usepackage{multicol}
+
+% https://www.overleaf.com/learn/latex/How_to_Write_a_Thesis_in_LaTeX_(Part_3)%3A_Figures%2C_Subfigures_and_Tables
+\usepackage{caption}
+\usepackage{subcaption}
+
+% Format the refs
+%\usepackage[sort,comma]{natbib}
+\usepackage[square,sort,comma,numbers]{natbib} % for ieee format [] , wei
+\usepackage[hidelinks]{hyperref}
+
+% For the tree
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+
+% For barchart
+\usepackage{pgfplots}
+\usepackage{notoccite}% PREVENTS CITES IN CAPTIONS FROM MISNUMBERING YOUR REFERENCES, wei
+
+\usepackage{tabularx}
+
+% Using the tex-text mapping for ligatures etc.
+\defaultfontfeatures{Mapping=tex-text}
+
+% Set the default fonts
+\setmainfont{Times New Roman}
+\setCJKmainfont{TW-Kai}
+
+% Your information goes here
+\input{nccuvars}
+\pgfplotsset{compat=1.14}
+\begin{document}
+
+% 政大論文浮水印
+\input{src/without-watermark.tex}
+
+\hypersetup{pageanchor=false}
+
+\frontmatter
+\pagenumbering{gobble}
+\makecover
+
+\clearpages
+\setcounter{page}{1}
+\hypersetup{pageanchor=true}
+\pagenumbering{roman}
+\phantomsection
+
+% generate certification
+% \makecertification
+% or include scanned pdf
+
+
+%\input{acknowledgements}
+\input{abstract}
+
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{
+
+\setlength{\topmargin}{#1}
+\setlength{\footskip}{#2}
+}%
+\item[]}{\end{list}}
+% Table of Content
+\clearpages
+\begin{changemargin}{-2cm}{2.5cm}
+\begin{small}
+\tableofcontents
+\end{small}
+\end{changemargin}
+
+% List of Figures
+% add by WEI 讓目錄增加前綴圖
+\newcommand{\loflabel}{圖}
+\renewcommand{\numberline}[1]{\loflabel~#1\hspace*{1em}}
+
+\clearpages
+\listoffigures
+% List of Tables
+
+\newcommand{\lotlabel}{表}
+\renewcommand{\numberline}[1]{\lotlabel~#1\hspace*{1em}}
+
+\clearpages
+\listoftables
+
+\mainmatter
+
+%%有需要增加或減少章節就記得來這邊更改
+
+% Your thesis goes here
+\input{chapters/1.緒論}
+\input{chapters/2.文獻探討}
+\input{chapters/3.技術方法}
+\input{chapters/4.實驗設計與結果分析}
+\input{chapters/5.結論與未來展望}
+
+
+\@startappendix
+
+
+\backmatter
+
+\clearpages
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliographystyle{ieeetr} % IEEE format
+% Your bibliography goes here
+\bibliography{thesis}
+
+\end{document}
